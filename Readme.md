@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
 * Студент: [Alexandr Karabanov](https://up.htmlacademy.ru/adaptive/23/user/1564333).
-* Наставник: `Неизвестно`.
+* Наставник: [Irina 🎓 Malinovskaya](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
