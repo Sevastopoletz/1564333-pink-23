@@ -4,9 +4,133 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page-body">
+    <header class="page-header header__wrapper">
+      <a class="page-header__logo logo" href="#">
+        <span class="visually-hidden">Pink</span>
+        <img src="img/logo/pink-header.svg" alt="Логотип приложения Pink" width="74" height="23">
+      </a>
+      <nav class="nav-main">
+        <button class="nav-main__dropdown" type="button" aria-label="Открывает меню">Меню</button>
+        <ul class="nav-main__list">
+          <li class="nav-main__item nav-main__item_current">Главная</li>
+          <li class="nav-main__item">Фотографии</li>
+          <li class="nav-main__item">Конкурс</li>
+          <li class="nav-main__item">HTML Academy</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - приложение, которое скрасит Ваши серые будни.</h1>
+      <p class="page-main__slogan">Взгляните на жизнь иначе!</p>
+      <section class="downloads downloads__wrapper">
+        <h2 class="visually-hidden">Выбирайте подходящую Вам платформу и кликайте <em>Скачать приложение</em>:</h2>
+        <button class="downloads__button" type="button">Скачать приложение</button>
+        <ul class="downloads__list">
+          <li class="downloads__item">
+            <a class="downloads__link" href="#">
+              <span class="visually-hidden">Apple</span>
+              <img class="downloads__pic" src="img/logo/apple.svg" alt="Скачать для iPhone, iPad, OS X" width="47" height="56">
+            </a>
+          </li>
+          <li class="downloads__item">
+            <a class="downloads__link" href="#">
+              <span class="visually-hidden">Android</span>
+              <img class="downloads__pic" src="img/logo/android.svg" alt="Скачать для Android" width="43" height="47">
+            </a>
+          </li>
+          <li class="downloads__item">
+            <a class="downloads__link" href="#">
+              <span class="visually-hidden">Windows</span>
+              <img class="downloads__pic" src="img/logo/microsoft.svg" alt="Скачать для Windows Phone, Windows 8" width="44" height="41">
+            </a>
+          </li>
+        </ul>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества приложения Pink.</h2>
+        <p class="features__slogan">Устали от серости мегаполиса?</p>
+        <p class="features__slogan">Нам есть, что вам предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__heading">Поднимает настроение</h3>
+            <p class="features__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__heading">Меняет мир вокруг</h3>
+            <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__heading">Заводит новых друзей</h3>
+            <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о приложении Pink:</h2>
+        <ul class="reviews__list slider">
+          <li class="reviews__item slider__item">
+            <div class="reviews__content">
+              <p class="reviews__author">Николай Петров</p>
+              <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+          </li>
+        </ul>
+        <p class="slider__pagination">
+          <button class="slider__control slider__control_current" type="button" aria-label="Первый отзыв"></button>
+          <button class="slider__control" type="button" aria-label="Второй отзыв"></button>
+          <button class="slider__control" type="button" aria-label="Третий отзыв"></button>
+        </p>
+      </section>
+      <section class="tariff">
+        <h2 class="visually-hidden">Выберите подходящий Вам тариф:</h2>
+        <div class="tariff">
+          <h3 class="tariff__title">База</h3>
+          <p class="tariff__option">Розовый фильтр&nbsp;<span class="visually-hidden">Да</span> <img src="img/logo/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff__option">Смайлики&nbsp;<span class="visually-hidden">Нет</span><img src="img/logo/no.svg" alt="Нет" width="27" height="27"></p>
+          <p class="tariff__option">Комментарии&nbsp;<span class="visually-hidden">Нет</span><img src="img/logo/no.svg" alt="Нет" width="27" height="27"></p>
+        </div>
+        <div class="tariff">
+          <h3 class="tariff__title">Стандарт</h3>
+          <p class="tariff__option">Розовый фильтр&nbsp;<span class="visually-hidden">Да</span> <img src="img/logo/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff__option">Смайлики&nbsp;<span class="visually-hidden">Да</span> <img src="img/logo/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff__option">Комментарии&nbsp;<span class="visually-hidden">Нет</span><img src="img/logo/no.svg" alt="Нет" width="27" height="27"></p>
+        </div>
+        <div class="tariff">
+          <h3 class="tariff__title">Анлим</h3>
+          <p class="tariff__option">Розовый фильтр&nbsp;<span class="visually-hidden">Да</span> <img src="img/logo/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff__option">Смайлики&nbsp;<span class="visually-hidden">Да</span> <img src="img/logo/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff__option">Комментарии&nbsp;<span class="visually-hidden">Да</span> <img src="img/logo/yes.svg" alt="Да" width="31" height="21"></p>
+        </div>
+        <p class="tariff__pagination slider__pagination">
+          <button class="slider__control" type="button" aria-label="Базовый тариф"></button>
+          <button class="slider__control slider__control_current" type="button" aria-label="Стандартный тариф"></button>
+          <button class="slider__control" type="button" aria-label="Безлимитный тариф"></button>
+        </p>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
+        <p class="contacts__text">Звоните:&nbsp;<a class="contacts__link" href="tel:88125556666">+7&nbsp;&lpar;812&rpar;&nbsp;555-66-66</a></p>
+        <p class="contacts__text">Пишите:&nbsp;<a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="contacts__text">Приезжайте в гости:&nbsp;<span class="contacts__link">ул. Большая Конюшенная, 19/8</span></p>
+       </section>
+       <section class="map">
+         <h2>Как нас найти?</h2>
+         <img class="map__pic" src="img/content/map.png" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="320" height="200">
+       </section>
+     </main>
+     <footer class="page-footer">
+       <a class="page-footer__logo logo">
+         <img src="img/logo/pink-footer.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="145" height="40">
+       </a>
+       <section class="social">
+         <h2 class="visually-hidden">Ссылки на нас в социальных сетях:</h2>
+         <a class="social__link" href="#" aria-label="Pink в Twitter"><span class="visually-hidden"></span><img src="img/social/twitter.svg" alt="Наш Twitter" width="18" height="14"></a>
+         <a class="social__link" href="#" aria-label="Pink в Facebook"><span class="visually-hidden"></span><img src="img/social/facebook.svg" alt="Наш Facebook" width="9" height="18"></a>
+         <a class="social__link" href="#" aria-label="Pink в Youtube"><span class="visually-hidden"></span><img src="img/social/youtube.svg" alt="Наш YouTube" width="15" height="13"></a>
+       </section>
+       <p class="developed">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo/html-academy.svg" alt="HTML Academy" width="27" height="34"></a></p>
+     </footer>
   </body>
 </html>
