@@ -1,0 +1,74 @@
+.gallery-upload {
+  position: relative;
+}
+
+.gallery-upload__container {
+  width: 320px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.gallery-upload__title {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 49px 20px 52px;
+}
+
+.gallery-upload__editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $smoke-white;
+}
+
+.gallery-upload__pic {
+  padding-top: 20px;
+}
+
+.gallery-upload__control-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 42px 34px 39px 57px;
+  align-items: center;
+
+}
+
+.gallery-upload__control {
+  border: 0;
+  padding: 0;
+  margin-right: 35px;
+}
+
+.gallery-upload__scale {
+  margin: 0 40px 34px;
+  align-self: stretch;
+}
+
+.gallery-upload__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 41px;
+  border-top: 1px solid rgba($dusky, 0.1);
+  width: 100%;
+}
+
+.gallery-upload__submit-button:first-of-type {
+  margin-bottom: 12px;
+  border: 3px solid $ruby;
+  color: $ruby;
+}
+
+.gallery-upload__submit-button {
+  margin: 0 20px;
+  border: 3px solid rgba($dusky, 0.1);
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 18px 87px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba($dusky, 0.1);
+}

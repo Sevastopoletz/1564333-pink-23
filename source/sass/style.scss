@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+//normalize
+
+@import "global/normalize.scss";
+
+//global
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+
+//blocks-base
+
+@import "content/page.scss";
+@import "content/body.scss";
+@import "content/header.scss";
+@import "content/navigation.scss";
+@import "content/map.scss";
+@import "content/social.scss";
+@import "content/footer.scss";
+
+//blocks-index
+
+@import "content/downloads.scss";
+@import "content/features.scss";
+@import "content/reviews.scss";
+@import "content/slider.scss";
+@import "content/tariff.scss";
+@import "content/contacts.scss";
+
+//blocks-gallery
+
+@import "content/gallery-feed.scss";
+@import "content/gallery-upload.scss";
+
+//blocks-form
+
+@import "content/contest.scss";

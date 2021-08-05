@@ -1,0 +1,28 @@
+.page-header {
+  position: relative;
+  background-color:  $dusky;
+  color: $white;
+}
+
+.page-header__container {
+  width: 320px;
+  height: 325px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 69px 1fr;
+}
+
+.page-header__wrapper {
+  min-width: 280px;
+  height: 69px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+}

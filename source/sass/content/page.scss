@@ -1,0 +1,33 @@
+.page {
+  height: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page-main__caption-wrapper,
+.page-inner__caption-wrapper {
+  width: 100%;
+  background-color: $dusky;
+}
+
+.page-main__caption,
+.page-inner__caption {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-main__slogan,
+.page-inner__slogan {
+  color: $white;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  margin: 0;
+  padding: 29px 20px 0 20px;
+}
+
+.page-inner__slogan {
+  padding-bottom: 84px;
+}

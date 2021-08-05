@@ -1,0 +1,11 @@
+.slider__pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 56px;
+  margin: 45px auto 60px;
+}
+
+.slider__control:not(:last-child) {
+  margin-right: 19px;
+}

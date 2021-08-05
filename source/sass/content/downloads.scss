@@ -1,0 +1,41 @@
+.downloads {
+  position: relative;
+  background-color: $dusky;
+  color: $white;
+}
+
+.downloads__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 38px;
+  display: grid;
+}
+
+.downloads__wrapper {
+  min-width: 280px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.downloads__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.downloads__button {
+  margin-bottom: 32px;
+}
+
+.downloads__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dowloads__tip {
+  text-align: center;
+}
