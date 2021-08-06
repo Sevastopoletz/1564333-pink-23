@@ -1,0 +1,149 @@
+.contest {
+  position: relative;
+}
+
+.contest__container {
+  width: 320px;
+  display: grid;
+  margin: 0 auto;
+}
+
+.contest__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contest__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin: 54px 20px 55px;
+}
+
+.contest__field {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contest__contacts-label {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $ruby;
+  padding: 27px 0 15px 43px;
+}
+
+.contest__contacts-input {
+  margin: 0 20px;
+  border: 2px solid $ice;
+  border-radius: 1px;
+  padding: 23px 78px 23px 20px;
+}
+
+.contest__achievements,
+.contest__app {
+  background-color: $smoke-white;
+  text-align: center;
+  margin: 44px 0 0;
+  padding-top: 42px;
+}
+
+.contest__caption {
+  margin: 0 47px 40px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $ruby;
+  text-transform: uppercase;
+}
+
+.contest__wrapper-achievements,
+.contest__wrapper-app {
+  display: grid;
+  grid-template-columns: 57px 1fr;
+  grid-auto-rows: 35px;
+  grid-gap: 22px 47px;
+}
+
+.contest__achievements-label {
+  font-size: 18px;
+  line-height: 30px;
+  align-self: center;
+  justify-content: start;
+}
+
+.contest__checkbox,
+.contest__radio {
+  margin-left: 22px;
+  align-self: center;
+}
+
+.contest__app {
+  padding-bottom: 42px;
+}
+
+.contest__platform {
+  margin: 0;
+  padding-bottom: 38px;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest__wrapper-comment {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contest__comment {
+  margin: 42px 68px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $ruby;
+}
+
+.contest__comment-text {
+  display: flex;
+  border: 2px solid $ice;
+  border-radius: 1px;
+  padding: 0;
+  margin: 0 20px;
+  width: 86%;
+  min-height: 193px;
+  resize: none;
+}
+
+.contest__button {
+  margin: 48px 20px 44px;
+  padding: 23px 45px;
+  background: $clover;
+  border: 2px solid $clover;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.contest__tip {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &-asterisk {
+    color: $ruby;
+  }
+}

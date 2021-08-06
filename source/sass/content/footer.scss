@@ -1,0 +1,29 @@
+.page-footer {
+  position: relative;
+}
+
+.page-footer__container {
+  width: 320px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.page-footer__wrapper {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  padding: 40px 87px 41px 88px;
+}
+
+.page-footer__social {
+  padding: 0 74px 41px;
+}
+
+.page-footer__developed {
+  padding: 0 95px 40px;
+}

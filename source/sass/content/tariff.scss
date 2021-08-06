@@ -1,0 +1,53 @@
+.tariff {
+  position: relative;
+  background-color: $white;
+  color: $dusky;
+}
+
+.tariff__container {
+  width: 320px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.tariff__wrapper {
+  min-width: 280px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff__table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+.tariff__heading,
+.tariff__cost {
+  background-color: $dusky;
+  color: $white;
+  width: 276px;
+}
+
+.tariff__heading {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.tariff__cost {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.tariff__cell {
+  padding: 0 20px;
+  height: 59px;
+  border-bottom: 2px solid $ice;
+  border-radius: 1px 0px 0px 0px;
+
+}
