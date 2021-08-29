@@ -7,6 +7,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
+@import "content/button.scss";
 
 //blocks-base
 
@@ -20,10 +21,12 @@
 
 //blocks-index
 
+@import "content/intro.scss";
 @import "content/downloads.scss";
 @import "content/features.scss";
-@import "content/reviews.scss";
+@import "content/pseudoscience.scss";
 @import "content/slider.scss";
+@import "content/reviews.scss";
 @import "content/tariff.scss";
 @import "content/contacts.scss";
 
@@ -31,6 +34,7 @@
 
 @import "content/gallery-feed.scss";
 @import "content/gallery-upload.scss";
+@import "content/editor.scss";
 
 //blocks-form
 

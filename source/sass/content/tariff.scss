@@ -1,53 +1,111 @@
+// NOTE: AAAAAAAAAAAA!!!111
+
 .tariff {
   position: relative;
-  background-color: $white;
-  color: $dusky;
+  background-color: $smoke-white;
+  color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+
+    @media (min-width: $tablet-width) {
+      height: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 100px;
+    }
+  }
 }
 
 .tariff__container {
   width: 320px;
-  margin: 0 auto;
-  display: grid;
 }
 
 .tariff__wrapper {
-  min-width: 280px;
-  padding: 0 20px;
+  overflow-x: auto;
+  padding-top: 101px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 98px;
+    padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 156px;
+    padding-bottom: 95px;
+  }
+}
+
+.tariff__table {
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  position: relative;
+  right: 30%;
+  background-color: $white;
+}
+
+.tariff__heading-emtpy {
+  visibility: hidden;
+}
+
+.tariff__heading {
+  background-color: $dusky;
+  color: $white;
+  min-width: 276px;
+  border: 2px solid $ice;
+}
+
+.tariff__heading-title,
+.tariff__heading-price {
   display: flex;
   flex-direction: column;
 }
 
-.tariff__table {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-collapse: collapse;
-}
-
-.tariff__heading,
-.tariff__cost {
-  background-color: $dusky;
-  color: $white;
-  width: 276px;
-}
-
-.tariff__heading {
+.tariff__heading-title {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 30px;
 }
 
-.tariff__cost {
+.tariff__heading-price {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
 }
 
-.tariff__cell {
-  padding: 0 20px;
-  height: 59px;
-  border-bottom: 2px solid $ice;
-  border-radius: 1px 0px 0px 0px;
+.tariff__option,
+.tariff__access {
+  border: 2px solid $ice;
+  min-width: 153px;
+  min-height: 45px;
+  padding: 15px;
+}
 
+.tariff__access {
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--on {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/logo/yes.svg");
+  }
+
+  &--off {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/logo/no.svg");
+  }
 }

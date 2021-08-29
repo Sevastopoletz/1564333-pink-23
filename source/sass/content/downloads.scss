@@ -4,36 +4,41 @@
   color: $white;
 }
 
-.downloads__container {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 38px;
-  display: grid;
-}
-
 .downloads__wrapper {
   min-width: 280px;
-  padding: 0 20px;
+  padding: 28px 20px 38px;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 .downloads__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .downloads__button {
+  margin-top: 28px;
   margin-bottom: 32px;
+  background-color: transparent;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $ruby;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba($ruby, 0.3);
+  }
 }
 
-.downloads__item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.downloads__link {
+  display: block;
+  margin: 17px;
 }
 
 .dowloads__tip {

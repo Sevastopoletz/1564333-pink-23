@@ -3,27 +3,117 @@
 }
 
 .page-footer__container {
-  width: 320px;
-  margin: 0 auto;
-  display: grid;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 240px;
+  }
 }
 
 .page-footer__wrapper {
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding: 40px 0;
+  display: grid;
+  row-gap: 38px;
+  justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px auto 75px;
+  }
 }
 
 .page-footer__logo {
-  padding: 40px 87px 41px 88px;
+  width: 145px;
+  height: 40px;
+  background-image: url("../img/logo/pink-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/logo/pink-footer-desktop.svg")
+  }
+
+// NOTE: разобраться с цветом! другое поключение?
+  // &:hover,
+  // &:focus {
+  // }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social {
-  padding: 0 74px 41px;
+  display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__link {
+  margin: 4px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba($dusky, 0.1);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--twitter {
+    background-image: url("../img/social/twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/social/facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/social/youtube.svg");
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $dusky;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-color: rgba($dusky, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 2px;
+  }
 }
 
 .page-footer__developed {
-  padding: 0 95px 40px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content 1fr;
+  column-gap: 15px;
+}
+
+.develoved__pic-image {
+  color: $ruby;
+
+// NOTE: разобраться с цветом! другое поключение?
+  // &:hover,
+  // &:focus {
+  // }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

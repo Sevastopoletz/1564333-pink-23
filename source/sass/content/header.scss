@@ -1,3 +1,5 @@
+// NOTE: логотип PINK подключение?
+
 .page-header {
   position: relative;
   background-color:  $dusky;
@@ -5,24 +7,59 @@
 }
 
 .page-header__container {
-  width: 320px;
-  height: 325px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 69px 1fr;
+  min-width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 147px 1fr;
+    column-gap: 60px;
+    align-items: center;
+  }
 }
 
 .page-header__wrapper {
-  min-width: 280px;
-  height: 69px;
+  height: 66px;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 940px;
+    height: 110px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
-.page-header__logo {
+.page-header__nav-dropdown {
   display: block;
-  width: 74px;
-  height: 23px;
+  position: relative;
+  width: 50px;
+  height: 24px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: $white;
+    box-shadow: 0 9px 0 0 $white, 0 18px 0 0 $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

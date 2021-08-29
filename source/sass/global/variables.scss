@@ -10,3 +10,28 @@ $clover: #2aab6d;
 $green-sea: #1c9b5e;
 
 //mixins
+
+@mixin hide-on-mobile {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+@mixin hide-on-tablet {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+@mixin hide-on-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+//viewports
+
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width-only: 659px;
+$tablet-width-only: 1199px;

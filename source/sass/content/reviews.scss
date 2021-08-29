@@ -5,33 +5,81 @@
 }
 
 .reviews__container {
-  width: 320px;
+  min-width: 280px;
   margin: 0 auto;
-  display: grid;
 }
 
 .reviews__wrapper {
-  min-width: 280px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  padding: 0 20px 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 46px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      width: 79px;
+      height: 63px;
+      display: block;
+      margin: 0 auto 8px;
+      background-image: url("../img/quotes.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.reviews__item {
+  display: none;
+
+  &--current {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__content {
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
 
 .reviews__author {
   padding-top: 50px;
-  padding-bottom: 31px;
+  padding-bottom: 15px;
   text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-age {
+  @include hide-on-mobile;
+
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__text {
@@ -39,4 +87,33 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 256px 0;
+  }
+}
+
+.reviews__toggles {
+  @include hide-on-tablet;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 225px;
+    width: 100%;
+  }
+}
+
+.reviews__pagination {
+  @include hide-on-desktop;
+
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 29px;
+  }
 }

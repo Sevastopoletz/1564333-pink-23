@@ -1,0 +1,91 @@
+.pseudoscience {
+  @include hide-on-mobile;
+
+  @media (min-width: $desktop-width) {
+    background-color: $smoke-white;
+  }
+}
+
+.pseudoscience__container {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0 3%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 903px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 903px;
+  }
+}
+
+.pseudoscience__wrapper {
+  padding: 54px 0;
+  display: grid;
+  grid-template-columns: 238px 1fr;
+  column-gap: 72px;
+  align-items: end;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/background/timer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-bottom: 67px;
+    grid-template-columns: 298px 1fr;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+    }
+  }
+}
+
+.pseudoscience__content {
+  align-self: center;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.pseudoscience__title {
+  color: $black;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    line-height: 30px;
+  }
+}
+
+.pseudoscience__text {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.pseudoscience__link {
+  color: $ruby;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
