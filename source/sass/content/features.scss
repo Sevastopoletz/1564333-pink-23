@@ -159,9 +159,9 @@
     &::before {
       @media (min-width: $desktop-width) {
         background-image: url("../img/background/feature-1.png");
-        }
       }
     }
+  }
 
 
   &--change {

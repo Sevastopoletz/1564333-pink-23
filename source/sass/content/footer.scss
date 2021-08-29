@@ -41,10 +41,10 @@
   background-size: cover;
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/logo/pink-footer-desktop.svg")
+    background-image: url("../img/logo/pink-footer-desktop.svg");
   }
 
-// NOTE: разобраться с цветом! другое поключение?
+  // NOTE: разобраться с цветом! другое поключение?
   // &:hover,
   // &:focus {
   // }
@@ -108,7 +108,7 @@
 .develoved__pic-image {
   color: $ruby;
 
-// NOTE: разобраться с цветом! другое поключение?
+  // NOTE: разобраться с цветом! другое поключение?
   // &:hover,
   // &:focus {
   // }

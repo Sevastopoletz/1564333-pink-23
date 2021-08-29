@@ -43,24 +43,24 @@
   text-transform: uppercase;
   padding: 25px;
 
-    &:hover,
-    &:focus {
-      color: $ruby;
- }
+  &:focus,
+  &:hover {
+    color: $ruby;
+  }
 
   &:active {
-   opacity: 0.3;
- }
+    opacity: 0.3;
+  }
 
- @media (min-width: $desktop-width) {
-   font-weight: normal;
-   line-height: 18px;
-   text-transform: none;
-   display: inline;
-   padding: 0;
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: none;
+    display: inline;
+    padding: 0;
 
     &:active {
       color: $white;
-   }
- }
+    }
+  }
 }

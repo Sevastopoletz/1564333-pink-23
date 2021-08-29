@@ -2,12 +2,10 @@
   max-height: 853px;
   position: relative;
   background-color: $dusky;
-  position: relative;
   color: $white;
 }
 
 .intro__container {
-
   @media (min-width: $tablet-width) {
     margin: 0 auto;
   }
@@ -26,7 +24,6 @@
 .intro__caption {
   width: 280px;
   margin: 0 auto;
-
 }
 
 .intro__slogan {
